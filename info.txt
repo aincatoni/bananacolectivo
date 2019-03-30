@@ -1,0 +1,26 @@
+Encargo:
+
+Crear un sitio web autoadministrable para el colectivo musical
+
+Información Banana Colectivo Web
+
+Web Base (contenido)
+https://fvergarac24.wixsite.com/bananacolectivo
+
+Secciones:
+
+Inicio:
+
+- Header (Menú nav)
+- Últimas Sesiones
+- Próximos Eventos
+- Noticias
+- Footer (Menú nav, RRSSS, Contacto)
+
+
+Banana Sesiones:
+
+Noticias
+Eventos
+Bandas
+Nosotros
