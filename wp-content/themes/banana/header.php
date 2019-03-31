@@ -12,7 +12,7 @@
   <!-- Header -->
   <header>
 
-    <nav id="navbar-example2" class="navbar navbar-light bg-light">
+    <nav id="navbar-example2" class="navbar navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#"><?php bloginfo('name') ?></a>
     <ul class="nav nav-pills">
       
@@ -29,7 +29,7 @@
         <a class="nav-link" href="#bananaBandas">Banana Bandas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#bananaEventos">Banana Nosotros</a>
+        <a class="nav-link" href="#bananaNosotros">Banana Nosotros</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#bananaSocial">Banana Social</a>
@@ -38,17 +38,14 @@
   </nav>
 
     
-    <div class="container-fluid">
-      
+    <div class="container-fluid"> 
         <div class="row">
           <div class="col-12 text-center">
             <a href="">
               <img src="https://picsum.photos/2000/500" class="img-fluid" alt="">
-              
             </a>
           </div>
-        </div>
-      
+        </div> 
     </div>
   
   </header>
