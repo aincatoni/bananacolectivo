@@ -8,9 +8,9 @@ function register_enqueue_style() {
 
     /* Registrando estilos */
     wp_register_style('bootstrap',
-    get_parent_theme_file_uri('/assets/bootstrap/css/bootstrap.css'), null, '1.0.0', 'screen');
-    wp_register_style('portfolio',
-    get_parent_theme_file_uri('/assets/css/portfolio-item.css'), null, '1.0.0', 'screen');
+    get_parent_theme_file_uri('/assets/bootstrap/css/bootstrap.min.css'), null, '1.0.0', 'screen');
+    wp_register_style('bootstrap-grid',
+    get_parent_theme_file_uri('/assets/bootstrap/css/bootstrap-grid.min.css'), null, '1.0.0', 'screen');
     wp_register_style('fontAwesome',
     'https://use.fontawesome.com/releases/v5.7.1/css/all.css', null, '1.0.0', 'screen');
     wp_register_style('googleFonts',
@@ -51,7 +51,8 @@ function register_enqueue_style() {
     /* Registrando Scripts */
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', null, '1.0.0', true);
     wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', null, '1.0.0', true);
-    wp_register_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', null, '1.0.0', true);
+    wp_register_script('bootstrap-js', 
+    get_parent_theme_file_uri('/assets/bootstrap/js/bootstrap.min.js'), null, '1.0.0', true);
     wp_register_script('mainJS', get_parent_theme_file_uri('/assets/js/script.js'), array('jquery'), null, true);
     
     
@@ -79,7 +80,7 @@ function menus_setup() {
 
 add_action( 'after_setup_theme', 'menus_setup' );
 
-// Custom Post Type - Proyectos
+// Custom Post Type - Secciones de la web
 
     add_action ('init', function(){
         $args = array(
@@ -121,45 +122,6 @@ add_action( 'after_setup_theme', 'menus_setup' );
       
     });
 
-    add_action ('init', function(){
-        $args = array(
-            'public' => true,
-            'label'  => 'Pizza',
-            'menu_position'         => 6,
-          );
-          register_post_type( 'pizza', $args );
-      
-    });
-
-    add_action ('init', function(){
-        $args = array(
-            'public' => true,
-            'label'  => 'Postres',
-            'menu_position'         => 6,
-          );
-          register_post_type( 'postres', $args );
-      
-    });
-
-    add_action ('init', function(){
-        $args = array(
-            'public' => true,
-            'label'  => 'Infusiones',
-            'menu_position'         => 6,
-          );
-          register_post_type( 'infusiones', $args );
-      
-    });
-
-    add_action ('init', function(){
-        $args = array(
-            'public' => true,
-            'label'  => 'Bebidas',
-            'menu_position'         => 6,
-          );
-          register_post_type( 'bebidas', $args );
-      
-    });
 
     //registro de widgets
 
