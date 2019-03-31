@@ -1,6 +1,7 @@
 Encargo:
 
-Crear un sitio web autoadministrable para el colectivo musical
+Crear un sitio web autoadministrable 
+para el colectivo musical banana
 
 Información Banana Colectivo Web
 
@@ -12,15 +13,39 @@ Secciones:
 Inicio:
 
 - Header (Menú nav)
-- Últimas Sesiones
-- Próximos Eventos
-- Noticias
+- Últimas Sesiones (CPT) + loop + página detalle
+- Próximos Eventos (CPT) + loop + página detalle
+- Noticias (CPT) + loop + página detalle 
 - Footer (Menú nav, RRSSS, Contacto)
 
 
 Banana Sesiones:
 
-Noticias
-Eventos
-Bandas
-Nosotros
+- Header (Menú nav)
+- CTP + loop + página detalle
+- Footer (Menú nav, RRSSS, Contacto)
+
+
+Eventos:
+- Header (Menú nav)
+- CTP + loop + página detalle
+- Footer (Menú nav, RRSSS, Contacto)
+
+
+Noticias(músicales): 
+
+- Header (Menú nav)
+- CPT + loop + página detalle
+- Footer (Menú nav, RRSSS, Contacto)
+
+
+Bandas:
+- Header (Menú nav)
+- CTP + loop + página detalle
+- Footer (Menú nav, RRSSS, Contacto)
+
+
+Nosotros:
+- Header (Menú nav)
+- Página con contenido sobre el equípo, misión y visión del colectivo + breve reseña historica del colectivo
+- Footer (Menú nav, RRSSS, Contacto)
