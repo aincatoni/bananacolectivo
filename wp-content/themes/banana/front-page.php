@@ -5,22 +5,22 @@
   <main>
     
     <!-- Banana Sesiones -->
-    <section></section>
+    <section id="bananaSesiones"></section>
     
     <!-- Eventos Banana -->
-    <section></section>
+    <section id="bananaEventos"></section>
     
     <!-- Últimas noticias  -->
-    <section></section>
+    <section id="bananaNoticias"></section>
     
     <!-- Bandas Banana -->
-    <section></section>
+    <section id="bananaBandas"></section>
 
     <!-- Nosotros -->
-    <section></section>
+    <section id="bananaNosotros"></section>
 
     <!-- RRSS -->
-    <section></section>
+    <section id="bananaSocial"></section>
   
   </main> 
     
