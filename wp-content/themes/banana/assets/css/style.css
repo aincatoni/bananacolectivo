@@ -1,5 +1,72 @@
+/* ESTILOS GENERALES */
+
 body {
   padding: 0;
   margin: 0;
   position: relative;
 }
+
+/*** FRONT PAGE ***/
+
+/* SESIONES BANANA */
+
+.extracto-sesion-grande {
+  /*background-image: url('https://via.placeholder.com/400x200.png');*/
+  background-color: coral;
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.extracto-sesion-grande-texto {
+position: absolute;
+bottom: 10px;
+left: 20px;
+
+}
+
+.extracto-sesion-medio {
+  /*background-image: url('https://via.placeholder.com/400x200.png');*/
+  background-color: crimson;
+  background-position: center;
+  background-size: cover;
+  min-height: 198px;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.extracto-sesion-medio-texto {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  
+  }
+
+.extracto-sesion-chico {
+    /*background-image: url('https://via.placeholder.com/400x200.png');*/
+    background-color: yellowgreen;
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    color: white;
+    border-right: 1px solid white;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+.extracto-sesion-chico-texto {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    
+}
+  extracto-sesion-chico-texto
