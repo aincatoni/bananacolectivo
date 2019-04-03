@@ -6,6 +6,15 @@ body {
   position: relative;
 }
 
+.bg-amarillo-banana {
+
+    background-color: transparent !important;
+    color: white;
+
+}
+.bg-amarillo-banana.scrolled {
+  background-color: #e6db52 !important;
+}
 /*** FRONT PAGE ***/
 
 /* SESIONES BANANA */
@@ -58,6 +67,7 @@ left: 20px;
     min-height: 200px;
     color: white;
     border-right: 1px solid white;
+    border-top: 1px solid white;
     padding: 15px;
     box-sizing: border-box;
     position: relative;
@@ -69,4 +79,3 @@ left: 20px;
     left: 10px;
     
 }
-  extracto-sesion-chico-texto

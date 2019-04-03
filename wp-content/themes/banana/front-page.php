@@ -17,72 +17,61 @@
       </div>
       <!-- LOOP CPT SESIONES -->
       <div class="container-fluid my-3 px-5">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-8 col-lg-8 extracto-sesion-grande">
-            <div class="extracto-sesion-grande-texto">  
-              <h3>POST 1</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et sequi vel.</p>
-              <span><a href="#">Revisa la sesión aquí</a></span>
-            </div>
-          </div>
-        
-          <div class="col-12 col-sm-12 col-md-4 px-0">
-           <div class="row">
-            <div class="col-6 col-sm-6 col-md-12 extracto-sesion-medio">
-              <div class="extracto-sesion-medio-texto">
-                <h3>POST 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et sequi vel.</p>
-                <span><a href="#">Revisa la sesión aquí</a></span>
-              </div>
-            </div>
+          
+              
+            <?php
+            $i = 0;
+        $arg = array(
+          'post_type'		 => 'sesiones',
+          'posts_per_page' => -1
+        );
+
+        $get_arg = new WP_Query( $arg );
+
+        while ( $get_arg->have_posts() ) {
+            $i++;
+            $get_arg->the_post(); ?>
+            <?php if($i === 1){ ?>  
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8 extracto-sesion-grande px-0">
+            <?php } ?>
             
-            <div class="col-6 col-sm-6 col-md-12 extracto-sesion-medio">
-              <div class="extracto-sesion-medio-texto">
-                <h3>POST 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et sequi vel.</p>
-                <span><a href="#">Revisa la sesión aquí</a></span>
+            <?php if($i === 2){ ?>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 px-0">
+              <?php } ?>
+
+            <?php if($i === 2 || $i === 3){ ?>  
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 extracto-sesion-medio">
+              
+            <?php } ?>
+            <?php if($i > 3){ ?>  
+              <div class="col-6 col-sm-3 col-md-3 col-lg-3 extracto-sesion-chico">
+            <?php } ?>
+                <div class="extracto-sesion-grande-texto">  
+
+                <h3> <?php the_title(); ?> </h3>
+                  <p><?php the_excerpt(); ?></p>
+                  <span><a href="<?php the_permalink() ?>">Leer más ...</a></span>
+
+                  
+                </div>
               </div>
-            </div>
-            </div>
-          </div>
+              <?php if($i === 3){ ?>
+              </div>
+              </div>
+              <div class="row">
+              <?php } ?>
+
+              
+        <?php 
+        } ?>
+        <?php if($i !== 3 ){ ?>
+                </div>
+              <?php } ?>
+       
         
-        </div>
 
-        <div class="row">
-          
-          <div class="col-6 col-sm-3 col-md-3 col-lg-3 extracto-sesion-chico">
-            <div class="extracto-sesion-chico-texto">
-              <h3>POST 4</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et sequi vel.</p>
-              <span><a href="#">Revisa la sesión aquí</a></span>
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-3 col-md-3 col-lg-3 extracto-sesion-chico">
-            <div class="extracto-sesion-chico-texto">
-              <h3>POST 5</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et sequi vel.</p>
-              <span><a href="#">Revisa la sesión aquí</a></span>
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-3 col-md-3 col-lg-3 extracto-sesion-chico">
-            <div class="extracto-sesion-chico-texto">
-              <h3>POST 6</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et sequi vel.</p>
-              <span><a href="#">Revisa la sesión aquí</a></span>
-            </div>
-          </div>
-          
-          <div class="col-6 col-sm-3 col-md-3 col-lg-3 extracto-sesion-chico">
-            <div class="extracto-sesion-chico-texto">
-              <h3>POST 7</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et sequi vel.</p>
-              <span><a href="#">Revisa la sesión aquí</a></span>
-            </div>
-          </div>
         
-        </div>
         
       </div>
     </section>
