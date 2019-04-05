@@ -8,10 +8,8 @@
     <section id="bananaSesiones">
       <div class="container-fluid mt-3"> 
           <div class="row">
-            <div class="col-12 text-center px-0">
-              <a href="">
-                <img src="https://via.placeholder.com/2000x400.png?text=Banana+Sesiones" class="img-fluid" alt="">
-              </a>
+            <div class="col-12 text-center px-0 titulo-seccion-amarillo-grande">
+            <h2>BANANA SESIONES</h2>  
             </div>
           </div> 
       </div>
@@ -33,7 +31,7 @@
             $get_arg->the_post(); ?>
             <?php if($i === 1){ ?>  
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-8 col-lg-8 extracto-sesion-grande px-0">
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8 extracto-sesion-grande px-0" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
             <?php } ?>
             
             <?php if($i === 2){ ?>
@@ -41,19 +39,19 @@
               <?php } ?>
 
             <?php if($i === 2 || $i === 3){ ?>  
-              <div class="col-12 col-sm-12 col-md-12 col-lg-12 extracto-sesion-medio">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 extracto-sesion-medio" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
               
             <?php } ?>
             <?php if($i > 3){ ?>  
-              <div class="col-6 col-sm-3 col-md-3 col-lg-3 extracto-sesion-chico">
+              <div class="col-6 col-sm-3 col-md-3 col-lg-3 extracto-sesion-chico" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
             <?php } ?>
-                <div class="extracto-sesion-grande-texto">  
-
+            <div class="overlayblack"></div>
+            <div class=" bajotexto"></div>
+           
+                <div class="extracto-sesion-texto">  
                 <h3> <?php the_title(); ?> </h3>
                   <p><?php the_excerpt(); ?></p>
-                  <span><a href="<?php the_permalink() ?>">Leer más ...</a></span>
-
-                  
+                  <span><a href="<?php the_permalink() ?>">Revisa la sesión aquí</a></span>
                 </div>
               </div>
               <?php if($i === 3){ ?>
@@ -69,10 +67,6 @@
                 </div>
               <?php } ?>
        
-        
-
-        
-        
       </div>
     </section>
     
@@ -80,9 +74,8 @@
     <section id="bananaEventos">
       <div class="container-fluid"> 
             <div class="row">
-              <div class="col-12 text-center">
-                <a href="">
-                  <img src="https://via.placeholder.com/2000x200.png?text=Banana+Eventos" class="img-fluid" alt="">
+              <div class="col-12 text-center titulo-seccion-amarillo-grande">
+                <h2>BANANA EVENTOS</h2>  
                 </a>
               </div>
             </div> 
@@ -100,11 +93,10 @@
     <section id="bananaNoticias">
       <div class="container-fluid"> 
           <div class="row">
-            <div class="col-12 text-center">
-              <a href="">
-                <img src="https://via.placeholder.com/2000x200.png?text=Banana+Noticias" class="img-fluid" alt="">
-              </a>
-            </div>
+          <div class="col-12 text-center titulo-seccion-amarillo-grande">
+                <h2>BANANA NOTICIAS</h2>  
+                </a>
+              </div>
           </div> 
       </div>
     </section>
@@ -113,12 +105,10 @@
     <section id="bananaBandas">
       <div class="container-fluid"> 
           <div class="row">
-            <div class="col-12 text-center">
-              <a href="">
-                <img src="https://via.placeholder.com/2000x200.png?text=Banana+Bandas" class="img-fluid" alt="">
-              </a>
-            </div>
-          </div> 
+          <div class="col-12 text-center titulo-seccion-amarillo-grande">
+                <h2>BANDAS BANANA</h2>  
+                </a>
+              </div> 
       </div>
     </section>
 
@@ -126,11 +116,10 @@
     <section id="bananaNosotros">
       <div class="container-fluid"> 
           <div class="row">
-            <div class="col-12 text-center">
-              <a href="">
-                <img src="https://via.placeholder.com/2000x200.png?text=Banana+Nosotros" class="img-fluid" alt="">
-              </a>
-            </div>
+          <div class="col-12 text-center titulo-seccion-amarillo-grande">
+                <h2>NOSOTROS</h2>  
+                </a>
+              </div>
           </div> 
       </div>
     </section>
