@@ -7,45 +7,44 @@
   <title><?php bloginfo('name') ?></title>
   <?php wp_head(); ?> 
 </head>
-<body data-spy="scroll" data-target="#navbar-example2">
+<body data-spy="scroll" data-target="#navbar-example">
   
   <!-- Header -->
   <header>
-
-    <nav id="navbar-example2" class="navbar navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#"><?php bloginfo('name') ?></a>
-    <ul class="nav nav-pills">
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#bananaSesiones">Banana Sesiones</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#bananaEventos">Banana Eventos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#bananaNoticias">Banana Noticias</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#bananaBandas">Banana Bandas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#bananaNosotros">Banana Nosotros</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#bananaSocial">Banana Social</a>
-      </li>
-    </ul>
-  </nav>
-
     
-    <div class="container-fluid"> 
-        <div class="row">
-          <div class="col-12 text-center">
-            <a href="">
-              <img src="https://picsum.photos/2000/500" class="img-fluid" alt="">
-            </a>
-          </div>
-        </div> 
+
+<nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light nav-banana bg-amarillo-banana">
+  <div class="nav-logo-banana">
+  <a class="navbar-brand" href="<?php echo get_home_url() ?>">
+    <img class="img-fluid" src="/recursos/BANANA/banana-logo-horizontal-navbar.png" alt="">
+  </a>
+  </div>  
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto" >
+    
+      
+    <?php if (has_nav_menu( 'header-menu' )) { ?>
+      <?php wp_nav_menu(array( 
+        'theme_location' 	=> 'header-menu',
+        'menu_class'     	=> 'navbar-nav',
+        'container_class' => 'ml-auto'    
+      )); ?>
+    <?php } ?>
+
+
     </div>
-  
-  </header>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+  </header> 
