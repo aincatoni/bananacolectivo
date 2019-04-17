@@ -59,3 +59,18 @@ https://fvergarac24.wixsite.com/bananacolectivo
 ![maqueta-estructura_1](https://user-images.githubusercontent.com/8588336/55281900-4a754d00-5319-11e9-9a01-4f8e141d45bb.jpg)
 
 ![maqueta_estructura_2](https://user-images.githubusercontent.com/8588336/55281842-b905db00-5318-11e9-9420-6074e9bcdea0.jpg)
+
+
+## ENLACE WEB PRODUCCIÓN
+http://186.64.118.50/~feg11ain/
+
+
+### PRESENTACIÓN KEYNOTE
+
+
+[https://drive.google.com/file/d/1BYZPdcHYBhPI02OR_vi9m-Sv1y4Y_WXx/view?usp=sharing](https://drive.google.com/file/d/1BYZPdcHYBhPI02OR_vi9m-Sv1y4Y_WXx/view?usp=sharing)
+
+
+### VIDEO 
+
+[VIDEO SITIO WEB](https://drive.google.com/file/d/1nEAo5NadMqXWrKqCuX5BIkf8ZtErPFPW/view?usp=sharing)

@@ -2,28 +2,29 @@
 
 @font-face {
   font-family: Bebas;
-  src: url(/wp-content/themes/banana/assets/fonts/Bebas-Regular.otf);
+	src: url('../fonts/Bebas-Regular.otf');
+	
 } 
 
 @font-face {
   font-family: Din;
-  src: url(/wp-content/themes/banana/assets/fonts/DIN-Bold.ttf);
+  src: url('../fonts/fonts/DIN-Bold.ttf');
 }
 
 @font-face {
   font-family: OpenSansBold;
-  src: url(/wp-content/themes/banana/assets/fonts/OpenSans-Bold.ttf);
+  src: url('../fonts/OpenSans-Bold.ttf');
 } 
 
 @font-face {
   font-family: OpenSans;
-  src: url(/wp-content/themes/banana/assets/fonts/OpenSans-Regular.ttf);
+  src: url('../fonts/OpenSans-Regular.ttf');
 } 
 
 
 @font-face {
   font-family: OpenSansExtraBold;
-  src: url(/wp-content/themes/banana/assets/fonts/OpenSans-ExtraBold.ttf);
+  src: url('../fonts/OpenSans-ExtraBold.ttf');
 } 
 
 
@@ -54,6 +55,10 @@ a:hover {
 
 .nav-banana {
   color: #d182aa !important;
+}
+
+.navbar-collapse .ml-auto {
+	z-index: 10000;
 }
 
 .bg-amarillo-banana {
@@ -111,7 +116,7 @@ color: #d182aa;
 
 .bananaSesionesSingle {
 
-	background-image: url('/recursos/BANANA/ojosbanana.jpg');
+	background-image: url('../img/BANANA/ojosbanana.jpg');
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -134,7 +139,7 @@ color: #d182aa;
 
 .bananaEventosSingle {
 
-	background-image: url('/recursos/BANANA/ojosbanana.jpg');
+	background-image: url('../img/BANANA/ojosbanana.jpg');
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -594,7 +599,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .noticias-single {
 
-	background-image: url('/recursos/BANANA/ojosbanana.jpg');
+	background-image: url('../img/BANANA/ojosbanana.jpg');
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -682,7 +687,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /** NOSOTROS **/
 #bananaNosotros {
 
-	background-image: url('/recursos/BANANA/ojosbanana.jpg');
+	background-image: url('../img/BANANA/ojosbanana.jpg');
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -791,7 +796,7 @@ h2{
 
 	.slide.ev_slide{
     /*background: #1E73BE;*/
-    background-image: url('/recursos/BANANA/banana-ev.jpeg');
+    background-image: url('../img/BANANA/banana-ev.jpeg');
 		color: white;
 		font-family: OpenSansBold;
 		background-size: cover;
@@ -800,7 +805,7 @@ h2{
 
 	.slide.ms_slide{
 		/*background: #ccc;*/
-		background-image: url('/recursos/BANANA/MADRESELVAS.png');
+		background-image: url('../img/BANANA/MADRESELVAS.png');
 		color: white;
 		font-family: OpenSansBold;
 		background-size: cover;
@@ -808,7 +813,7 @@ h2{
 	}
 	.slide.ns_slide{
 		/*background: #BF525A;*/
-		background-image: url('/recursos/BANANA/banana_ninos_simios.jpg');
+		background-image: url('../img/BANANA/banana_ninos_simios.jpg');
 		color: white;
 		font-family: OpenSansBold;
 		background-size: cover;

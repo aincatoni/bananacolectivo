@@ -11,7 +11,7 @@
 						<div class="row">
 							<div class="col-12">
 								<a class="navbar-brand" href="<?php echo get_home_url() ?>">
-								<img class="img-fluid logo-bana-nav" src="/recursos/BANANA/banana-logo-horizontal-navbar.png" alt="">
+								<img class="img-fluid logo-bana-nav" src="<?php echo get_template_directory_uri(); ?>/assets/img/BANANA/banana-logo-horizontal-navbar.png" width="" height="" alt="" />
 								</a>
 							</div>
 							
@@ -51,7 +51,7 @@
 					
 					</div>
 					<div class="row">
-						<div class="col-10">
+						<div class="col-12">
 						<?php echo do_shortcode('[contact-form-7 id="108" title="Contáctanos"]'); ?>
 						</div>
 					
