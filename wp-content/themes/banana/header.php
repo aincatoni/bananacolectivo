@@ -16,7 +16,7 @@
 <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light nav-banana bg-amarillo-banana">
   <div class="nav-logo-banana">
   <a class="navbar-brand" href="<?php echo get_home_url() ?>">
-    <img class="img-fluid" src="/recursos/BANANA/banana-logo-horizontal-navbar.png" alt="">
+    <img class="img-fluid logo-bana-nav" src="/recursos/BANANA/banana-logo-horizontal-navbar.png" alt="">
   </a>
   </div>  
 

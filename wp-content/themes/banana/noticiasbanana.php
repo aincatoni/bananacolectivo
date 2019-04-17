@@ -24,7 +24,7 @@ if ( have_posts() ) {
     the_post();
     ?>
         <?php if($noticiasBanana <= 2){ ?> 
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 ficha-noticia-grande" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center top;">
+        <div data-aos="fade-left" class="col-12 col-sm-12 col-md-6 col-lg-6 ficha-noticia-grande" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center top;">
           <div class="texto-noticia-grande">
             <a href="<?php the_permalink() ?>">
               <h3><?php the_title(); ?></h3>
@@ -37,14 +37,17 @@ if ( have_posts() ) {
           
           <?php if($noticiasBanana > 2){ ?> 
 
-            <div class="col-12 col-sm-12 col-md-3 col-lg-3 ficha-noticias">
+            <div data-aos="fade-right" class="col-12 col-sm-12 col-md-3 col-lg-3 ficha-noticias">
             <a href="<?php the_permalink() ?>">
-              <div class="imagen-evento" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
+              <div class="imagen-noticia" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
                 <div class="overlayblack"></div>
               </div>
             </a>
+           <div class="texto-noticia-chica">
            <h3> <?php the_title(); ?> </h3>
-          <p><?php the_content( $more_link_text , $strip_teaser ); ?> </p>
+           <span><a href="<?php the_permalink() ?>">Más...</a></span>
+           </div>
+            
           </div>
           <?php } ?>
 

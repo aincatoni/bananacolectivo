@@ -29,7 +29,7 @@
       $get_arg->the_post(); ?>
 
        
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3 ficha-banda" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center top;">
+        <div data-aos="fade-left" class="col-12 col-sm-12 col-md-6 col-lg-3 ficha-banda" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center top;">
           <div class="texto-banda">
             <a href="<?php the_permalink() ?>">
               <h3><?php the_title(); ?></h3>

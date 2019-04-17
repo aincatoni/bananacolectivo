@@ -32,7 +32,7 @@
               <div class="ficha-evento">
                 <a href="<?php the_permalink() ?>">
                   <div class="imagen-evento" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover; background-position: center;">
-                    <div class="overlayblack"></div>
+                    
                   </div>
                 </a> 
                 <div class="texto-ficha-evento">

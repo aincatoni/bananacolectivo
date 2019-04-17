@@ -37,9 +37,19 @@ body {
   scroll-behavior: smooth;
 }
 
+
 html {
 	scroll-behavior: smooth;
 	font-size: 14px;
+}
+
+a {
+
+	color: #d182aa;
+}
+
+a:hover {
+	color: #f2e651;
 }
 
 .nav-banana {
@@ -49,29 +59,35 @@ html {
 .bg-amarillo-banana {
 
   background-color: yellow;
-    height: 70px;
+    height: 90px;
     color: white;
     padding: 15px 0;
 }
 
 .bg-amarillo-banana.scrolled {
   background-color: yellow !important;
-  height: 55px;
+  height: 75px;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+	z-index: 1;
+	-webkit-box-shadow: 1px 6px 5px -2px rgba(0,0,0,0.23);
+-moz-box-shadow: 1px 6px 5px -2px rgba(0,0,0,0.23);
+box-shadow: 1px 6px 5px -2px rgba(0,0,0,0.23);
 }
 
 .nav-banana .navbar-brand  {
 
   color: rgb(209, 130, 170) !important;
-}
 
-.nav-banana .navbar-nav .nav-link{
+ }
+.nav-banana .navbar-nav .nav-link {
 
-  color: #398d8f;
+  color: #f58cba;
+    font-family: Bebas;
+    font-size: 1.4em;
+    margin-right: 10px;
   }
 
 .nav-banana .navbar-nav .nav-link.active {
@@ -79,18 +95,117 @@ html {
 color: #d182aa;
 }
 
+.nav-banana .navbar-nav .nav-link:hover {
 
-.nav-logo-banana {
+	color: #1ab1cf;
+	}
 
+
+
+#menu-menu-principal {
+
+	margin: 0 20px 0 0;
 }
 
 
+
+.bananaSesionesSingle {
+
+	background-image: url('/recursos/BANANA/ojosbanana.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	color: white;
+	position: relative;
+}
+
+.bananaSesionesSingle:before {
+
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom,#f5e947,#d182aa);
+    opacity: .85; 
+}
+
+
+.bananaEventosSingle {
+
+	background-image: url('/recursos/BANANA/ojosbanana.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	color: white;
+	position: relative;
+}
+
+.bananaEventosSingle a {
+
+	color: #e6db52;
+
+}
+
+.bananaEventosSingle a:hover {
+
+	color: #d182aa;
+	
+}
+
+.bananaEventosSingle:before {
+
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom,#f5e947,#4daad1);
+opacity: .85;
+}
+
+
+
+
+
+
+.tituloSesionSingle {
+	display: flex;
+}
+.tituloSesionSingle h3 {
+	color: #d182aa;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: right;
+    font-size: 3em;
+}
+
+
+.nav-logo-banana {
+
+	margin: 0 0 0 20px;
+
+}
+
+.imagenDestSesion {
+	object-fit: cover;
+  width: 100%;
+  height: 400px;
+  object-position: center top;
+}
+
 #banner-principal-cabecera{
-  /*margin-top: 54px;*/
+  margin-top: 15px;
 }
 /*** FRONT PAGE ***/
 
 /* SESIONES BANANA */
+
+
+
 
 .titulo-seccion-amarillo-grande {
 
@@ -301,22 +416,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .ficha-evento {
 
 	border-radius: 3px;
-	color: #ffffff;
-	position: relative;
-	min-height: 180px;
+    color: #ffffff;
+    position: relative;
+    min-height: 280px;
 }
 
 .texto-ficha-evento {
 
-	background-color: #00c5e4e0;
+	background-color: #00a9c3fa;
 	padding: 15px 10px 0px 10px;
 	border-radius: 5px;
 	box-sizing: border-box;
-	min-height: 125px;
+	min-height: 135px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	transition: 1s;
 }
 .texto-ficha-evento:hover {
 
@@ -324,8 +440,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 }
 
+.imagen-noticia{
+	height: 180px;
+	margin: 5px 0 5px 0;
+	border-radius: 3px;
+	position: relative;
+}
+
 .imagen-evento{
-    height: 180px;
+    height: 280px;
     margin: 5px 0 5px 0;
     border-radius: 3px;
     position: relative;
@@ -343,8 +466,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .ficha-evento h4 {
   font-size: 1em;
-    margin: 0;
-    color: #ffff02;
+  margin: 5px 0;
+  color: #ffff02;
 }
 
 .ficha-evento h5 {
@@ -467,10 +590,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 }
 
+
+
 .noticias-single {
 
-	background-color: #ffff02;
-	padding: 25px 0;
+	background-image: url('/recursos/BANANA/ojosbanana.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	color: white;
+	position: relative;
+	margin: 20px 0;
+	padding: 40px;
+}
+
+.noticias-single:before {
+
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom,#f5e947,#d182aa);
+    opacity: .85; 
 }
 
 /** BANDAS **/
@@ -494,13 +637,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgb(68, 2, 80) 100%);
 	bottom: 0;
 	left: 0;
-	padding: 5px;
-	min-height: 145px;
-
+	padding: 5px 10px;
+	min-height: 65px;
 	
 }
 .texto-banda h3 {
 	color: #ffff02;
+  margin-bottom: -20px;
 }
 .texto-banda p {
 
@@ -514,6 +657,77 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	text-decoration: none;
 }
 
+/** API LAST FM **/
+.last {
+	color: #ffffff;
+	font-family: OpenSans;
+	height: 250px;
+	margin: 5px 0 30px 0;
+	padding: 60px 15px;
+	border-radius: 2px;
+	background-image: linear-gradient(to bottom,#f5e94700,#f189b9);
+	opacity: 0.99;
+}
+
+.last h2 {
+
+	font-family: OpenSansBold;
+    font-weight: 300;
+    font-size: 3vw;
+    padding: 20px 0;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/** NOSOTROS **/
+#bananaNosotros {
+
+	background-image: url('/recursos/BANANA/ojosbanana.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	color: white;
+	position: relative;
+}
+
+#bananaNosotros:before {
+
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom,#f5e947,#d182aa);
+    opacity: .85; 
+}
+
+.titulo-seccion-amarillo-dark-grande {
+
+	background-color: #f2e651;
+	min-height: 140px;
+	color: #d182aa;
+	padding: 10px;
+	
+	}
+	.titulo-seccion-amarillo-dark-grande h2 {
+
+		font-family: Bebas;
+		font-weight: 800;
+		font-size: 6em;
+		
+		}
+.texto-noticia-chica {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 4;
+	background-image: linear-gradient(to bottom,#60019c00,#4d017d);
+	opacity: 0.99;
+	height: 85px;
+	padding: 15px 11px;
+}
 /** SLIDER **/
 
 
@@ -575,20 +789,30 @@ h2{
 		transition: all .3s;
 	}
 
-	.slide.blue{
+	.slide.ev_slide{
     /*background: #1E73BE;*/
     background-image: url('/recursos/BANANA/banana-ev.jpeg');
-    color: white;
-    background-size: cover;
-    background-position:center;
-	}
-	.slide.white{
-		background: #ccc;
-		color: #444444;
-	}
-	.slide.red{
-		background: #BF525A;
 		color: white;
+		font-family: OpenSansBold;
+		background-size: cover;
+		background-position: center top;
+	}
+
+	.slide.ms_slide{
+		/*background: #ccc;*/
+		background-image: url('/recursos/BANANA/MADRESELVAS.png');
+		color: white;
+		font-family: OpenSansBold;
+		background-size: cover;
+		background-position: center top;
+	}
+	.slide.ns_slide{
+		/*background: #BF525A;*/
+		background-image: url('/recursos/BANANA/banana_ninos_simios.jpg');
+		color: white;
+		font-family: OpenSansBold;
+		background-size: cover;
+		background-position: center top;
 	}
 	.slide.active{
 		z-index: 10;
@@ -671,14 +895,17 @@ h2{
 		border: 2px solid rgba(255,255,255,.8);
 		background: transparent;
   }
-  
+	
 
 /** FOOTER **/
 
 footer {
 	background-color: #ffff02;
   border-top: 10px solid #ffec02;
-  color: #d182aa;
+	color: #d182aa;
+	-webkit-box-shadow: 6px 6px 10px 10px rgba(0,0,0,0.23);
+	-moz-box-shadow: 6px 6px 10px 10px rgba(0,0,0,0.23);
+	box-shadow: 6px 6px 10px 10px rgba(0,0,0,0.23);
 }
 
 footer .iconos-sociales ul li {
@@ -686,11 +913,147 @@ footer .iconos-sociales ul li {
 	display: inline-block;
 	font-size: 3em;
 	margin-right: 10px;
-	color: #60009c;
+	color: #e6db52;
 
 }
 
+footer .iconos-sociales ul li:hover{
+	color: #f58cba;
+}
 .iconos-sociales ul {
 
 	padding: 0;
+}
+
+#menu-menu-footer{
+	color: #f58cba;
+    font-family: Bebas;
+}
+
+#menu-menu-footer a{
+	color: #f58cba;
+	font-family: Bebas;
+	font-size: 1.5em;
+	line-height: 17px;
+}
+#menu-menu-footer a:hover {
+color: #1ab1cf;
+
+}
+
+
+
+
+/** MERCH **/
+#bananaMerch {
+
+	background-image: linear-gradient(to bottom,#f5e947,#d182aa);
+    opacity: 1;
+}
+
+#bananaMerch h2 {
+	font-family: Bebas;
+	color: #d182aa;
+	font-size: 6em;
+margin: 0 auto;
+text-align: center;
+
+}
+
+#bananaMerch h4 {
+	font-family: Bebas;
+	color: #d182aa;
+	font-size: 2em;
+	margin: 0 auto;
+text-align: center;
+
+}
+
+
+.gallery-block{
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.gallery-block .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.compact-gallery .item{
+  overflow: hidden;
+  margin-bottom: 0;
+  background: black;
+  opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image{
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info{
+  position: relative;
+    display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description{
+  display: grid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 17px;
+    line-height: 18px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 1;
+    color: #fff;
+    transition: 0.8s ease;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body{
+  font-size: 0.8em;
+  margin-top: 10px;
+  font-weight: 300;
+}
+@media (max-width: 992px){
+
+	#menu-menu-principal {
+    margin: 0 0px 0 0;
+    background-color: #ffff02;
+    padding: 20px;
+}
+	
+}
+
+@media (min-width: 576px) {
+
+  .gallery-block.compact-gallery .item .description {
+    opacity: 0; 
+  }
+
+  .gallery-block.compact-gallery .item a:hover .description {
+    opacity: 1; 
+  } 
+
+  .gallery-block .zoom-on-hover:hover .image {
+    transform: scale(1.3);
+    opacity: 0.7; 
+  }
 }

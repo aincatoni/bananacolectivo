@@ -1,6 +1,6 @@
 <!-- Banana Sesiones -->
 <section id="bananaSesiones">
-      <div class="container-fluid mt-3"> 
+      <div class="container-fluid mt-5"> 
           <div class="row">
             <div class="col-12 text-center px-0 titulo-seccion-amarillo-grande">
             <h2>BANANA SESIONES</h2>  

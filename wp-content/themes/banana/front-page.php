@@ -6,9 +6,6 @@
     
   <!-- Main Content -->
   <main>
-
-  <div id="imprimir">
-  </div>
     
   <!-- Sesiones Banana -->
   <?php get_template_part('sesionesbanana') ?>
@@ -23,16 +20,8 @@
      <!-- Bandas Banana -->
      <?php get_template_part('bandasbanana') ?>
 
-    <!-- RRSS -->
-    <section id="bananaSocial">
-      <div class="container-fluid"> 
-          <div class="row">
-            <div class="col-12 text-center">
-            <div class="instagram"></div>
-            </div>
-          </div> 
-      </div>
-    </section>
+    <!-- LASTFM -->
+    <?php get_template_part('bandaslastfm') ?>
   
   </main> 
     

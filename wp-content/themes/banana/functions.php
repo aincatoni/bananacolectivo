@@ -21,6 +21,7 @@ function register_enqueue_style() {
     get_parent_theme_file_uri('/assets/bootstrap/css/bootstrap.min.css'), null, '1.0.0', 'screen');
     wp_register_style('bootstrap-grid',
     get_parent_theme_file_uri('/assets/bootstrap/css/bootstrap-grid.min.css'), null, '1.0.0', 'screen');
+    wp_register_style('baguetteboxcss','https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css', null, '1.0.0', 'screen');
     wp_register_style('fontAwesome',
     'https://use.fontawesome.com/releases/v5.8.1/css/all.css', null, '1.0.0', 'screen');
     wp_register_style('googleFonts',
@@ -39,6 +40,7 @@ function register_enqueue_style() {
 
     wp_enqueue_style('bootstrap');
     wp_enqueue_style('portfolio');
+    wp_enqueue_style('baguetteboxcss');
     wp_enqueue_style('fontAwesome');
     wp_enqueue_style('googleFonts');
     wp_enqueue_style('magnificPopup');
@@ -61,7 +63,7 @@ function register_enqueue_style() {
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.4.0.min.js', null, '1.0.0', true);
     wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', null, '1.0.0', true);
     wp_register_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', null, '1.0.0', true);
-    wp_register_script('smooth', get_parent_theme_file_uri('assets/js/jquery.smoothscroll.min'), null, '1.0.0', true);
+    wp_register_script('baguettebox', 'https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js', 'jquery', '1.0.0', true);
     wp_register_script('bootstrap-js', 
     get_parent_theme_file_uri('/assets/bootstrap/js/bootstrap.min.js'), null, '1.0.0', true);
     wp_register_script('mainJS', get_parent_theme_file_uri('/assets/js/script.js'), array('jquery'), null, true);
@@ -70,8 +72,10 @@ function register_enqueue_style() {
     /* Enqueue scripts */
     wp_enqueue_script('jquery');
     wp_enqueue_script('popper');
+    wp_enqueue_script('smooth');
     wp_enqueue_script('aos-js');
-    wp_enqueue_script('bootstrap-js');
+    wp_enqueue_script('baguettebox');
+    wp_enqueue_script('bootstrap-js'); 
     wp_enqueue_script('mainJS');
 
 }

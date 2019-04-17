@@ -2,24 +2,24 @@
    
    <div class="slider">
 	  <div class="arrows">
-	    <a class="previous" href="#">&#xf053;</a>
-	    <a class="next" href="#">&#xf054;</a>
+	    <a class="previous" href="#"><i class="fas fa-chevron-left"></i></a>
+	    <a class="next" href="#"><i class="fas fa-chevron-right"></i></a>
 	  </div>
 	  <div class="slides">
-			<div class="slide active blue" data-icon="&#xf0ac;">
+			<div class="slide active ev_slide">
 				<h2>BANANA SESIONES ESPACIO VOLÁTIL</h2>
 				<p>REVISA EL VIDEO QUE GRABAMOS JUNTO A LOS AMIGOS DE ESPACIO VOLÁTIL</p>
 				<a target="_blank" href="http://bananacolectivo.test/sesiones/sesion-9/">IR</a>
 			</div>
-			<div class="slide white" data-icon="&#xf0f3;">
-				<h2>Alarms</h2>
-				<p>Nobody wants to miss out on important events, but sometimes, it’s hard to find the time in another city. Clocks+ lets you set alarms for your favorite cities in a simple and intuitive way.</p>
-				<a target="_blank" href="https://itunes.apple.com/gb/app/clocks+/id937380413?mt=8">Start the Clock</a>
+			<div class="slide ms_slide">
+				<h2>BANANA SESIONES MADRESELVAS</h2>
+				<p>REVISA EL VIDEO QUE GRABAMOS JUNTO A LOS AMIGOS DE MADRESELVAS</p>
+				<a target="_blank" href="http://bananacolectivo.test/sesiones/sesion-8/">IR</a>
 			</div>
-			<div class="slide red" data-icon="&#xf013;">
-				<h2>Widgets/Today Extension</h2>
-				<p>Clocks+ wouldn’t be a modern app without Widgets. Your favorite cities appear in the Today View with just a swipe down, for quick glancing, Did we mention that they look awesome, too?</p>
-				<a target="_blank" href="https://itunes.apple.com/gb/app/clocks+/id937380413?mt=8">Download on AppStore</a>
+			<div class="slide ns_slide">
+				<h2>BANANA SESIONES NIÑOS SIMIOS</h2>
+				<p>REVISA EL VIDEO QUE GRABAMOS JUNTO A LOS AMIGOS DE  NIÑOS SIMIOS</p>
+				<a target="_blank" href="http://bananacolectivo.test/sesiones/sesion-7/">IR</a>
 			</div>
 		</div>
 		<div class="bullets">

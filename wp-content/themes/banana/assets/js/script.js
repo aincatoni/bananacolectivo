@@ -9,6 +9,9 @@ $(function (){
 			if(height  > 45) {
 				$('.logo-bana-nav').attr("src","/recursos/BANANA/banana-logo-horizontal-navbar-small.png");
 			}
+			if(height === 0) {
+				$('.logo-bana-nav').attr("src","/recursos/BANANA/banana-logo-horizontal-navbar.png");
+			}
 	});
 		
    
@@ -19,6 +22,8 @@ $('.menu-item a').addClass('nav-link');
 
 AOS.init();
 
+
+baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
 
 
 // SMOOTH SCROLL
@@ -116,21 +121,9 @@ var $slider = $(".slider"), $bullets = $(".bullets");
 
 });
 
-
-// API INSTAGRAM
+// 
 $(function (){
-  var url = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/BpMiaXVFh4U/' 
-  
-    $.ajax ({
-      url: url,
-      method: 'GET',
-    }).then(function (data){
-      console.log(data);
-      $(".instagram").append(data.html);
-  
-      });
-  
-  
+
       $('#links').on('click',function (event) {
         event = event || window.event;
         var target = event.target || event.srcElement,
@@ -138,9 +131,57 @@ $(function (){
             options = {index: link, event: event},
             links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);
-    });
-  
-    
-  });
+		});
+		
+// API LASTFM
+
+			$(function (){
+				var EVlastFm = 'http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=54dd79fc66ea166a369732e7b7546b3f&artist=espacio+volátil&album=Cuenta+regresiva&format=json'
+				var NTHlastFm = 'http://ws.audioscrobbler.com//2.0/?method=artist.getinfo&artist=No+Tan+Humano&api_key=54dd79fc66ea166a369732e7b7546b3f&format=json'
+				var ARClastFm = 'http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=54dd79fc66ea166a369732e7b7546b3f&artist=Arrecifes&album=Arrecifes&format=json'
+				
+
+					$.ajax ({
+						url: EVlastFm,
+						method: 'GET',
+					}).then(function (data){
+						console.log(data);
+						$('.ev').append('<h2>' + data.album.artist + '</h2>');
+						$('.ev').append('<h3>' + data.album.name + '</h3>');
+						$('.ev').append('<p>' + 'Reproduciones esta semana: ' + data.album.playcount + '</p>');
+						
+				
+						});
+
+						$.ajax ({
+							url: NTHlastFm,
+							method: 'GET',
+						}).then(function (data){
+							console.log(data);
+							$('.nth').append('<h2>' + data.artist.name + '</h2>');
+							
+							$('.nth').append('<h3>' + data.stats.playcount + '</h3>');
+					
+							});
+
+							$.ajax ({
+						url: ARClastFm,
+						method: 'GET',
+					}).then(function (data){
+						console.log(data);
+						$('.arc').append('<h2>' + data.album.artist + '</h2>');
+						$('.arc').append('<h3>' + data.album.name + '</h3>');
+						$('.arc').append('<p>' + 'Reproduciones esta semana: ' + data.album.playcount + '</p>');
+						
+				
+						});
+				});
+
+			
+	});
+	
+
+
+		
 
 
